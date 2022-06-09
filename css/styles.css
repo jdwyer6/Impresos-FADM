@@ -56,7 +56,7 @@ body{
     margin-top: 100px;
 }
 
-.aboutUsButton{
+.myButton{
     box-shadow: inset 0 0 0 0 white;
     transition: .4s ease-out;
     background-color: var(--darkGray);
@@ -64,14 +64,35 @@ body{
     border: 1px solid var(--darkGray);
 }
 
-.aboutUsButton:hover{
+.myButton:hover{
     box-shadow: inset -150px 0 0 0 white;
     outline: none;
-    color: black;
+    color: var(--darkGray);
     width: 150px;
 }
 
 /* Clients */
 .clientsHeader{
     font-size: 5vw;
+}
+
+/* Services */
+.servicesImg{
+    object-fit: cover;
+    max-width: 600px;
+    max-height: 350px;
+	transform: scale(1);
+	transition: .6s ease-in-out;
+}
+
+.servicesImg:hover{
+    object-fit: cover;
+    cursor: pointer;
+	transform: scale(1.1);
+}
+
+figure{
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 350px;
 }
