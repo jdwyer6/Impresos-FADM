@@ -22,8 +22,16 @@ body{
     background-color: var(--antiFlashWhite);
 }
 
+/* Home Page */
+
 .headerText{
     font-size: 6vw;
+
+    animation: moveInRight 1s ease-out;
+}
+
+.headerTag{
+    animation: moveInLeft 1s ease-out;
 }
 
 .navButton::after{
@@ -44,11 +52,50 @@ body{
 }
 
 .serviceImage{
-    transition: .3s ease-out;
+    transition: .5s ease-in-out;
 }
 
 .serviceImage:hover{
     border-radius: 50%;
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(1rem)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        transform: translate(0rem);
+        opacity: 1;
+    }
+}
+
+@keyframes fill{
+    from{
+        top: 200px;
+        transform: translate(-50%);
+    }
+    to{
+        top: 0px;
+        transform: translate(-50%);
+    }
 }
 
 /* about us */
@@ -57,18 +104,50 @@ body{
 }
 
 .myButton{
-    box-shadow: inset 0 0 0 0 white;
-    transition: .4s ease-out;
+    /* box-shadow: inset 0 0 0 0 white; */
+    transition: .4s ease-in-out;
+    padding: 10px;
     background-color: var(--darkGray);
     outline: none;
     border: 1px solid var(--darkGray);
+    border-radius: 20px;
 }
 
 .myButton:hover{
-    box-shadow: inset -150px 0 0 0 white;
+    /* box-shadow: inset -350px 0 0 0 white; */
     outline: none;
-    color: var(--darkGray);
-    width: 150px;
+    color: black;
+    background-color: var(--antiFlashWhite);
+}
+
+.btnCircleLg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color:var(--darkGray);
+    font-size: 24px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    z-index: 0;
+}
+
+.btnCircleLg:hover::before{
+    content: "";
+    background-color: var(--blue);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 100px;
+    left: 50%;
+    animation: fill 1s ease-in-out forwards;
+    z-index: -1;
+}
+
+.btnCircleLgText{
+    z-index: 1;
+    margin-top: 20px;
 }
 
 /* Clients */
@@ -95,4 +174,9 @@ figure{
     overflow: hidden;
     max-width: 600px;
     max-height: 350px;
+}
+
+/* About Us */
+.aboutUsContactButton{
+    width: 300px;
 }
