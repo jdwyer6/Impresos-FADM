@@ -150,11 +150,6 @@ body{
     margin-top: 20px;
 }
 
-/* Clients */
-.clientsHeader{
-    font-size: 5vw;
-}
-
 /* Services */
 .servicesImg{
     object-fit: cover;
