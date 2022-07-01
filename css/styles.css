@@ -154,7 +154,7 @@ body{
 .servicesImg{
     object-fit: cover;
     max-width: 600px;
-    max-height: 350px;
+    /* max-height: 350px; */
 	transform: scale(1);
 	transition: .6s ease-in-out;
 }
