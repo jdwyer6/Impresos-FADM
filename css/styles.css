@@ -27,7 +27,7 @@ body{
 /* Home Page */
 
 .headerText{
-    font-size: 6vw;
+    font-size: 4vw;
     animation: moveInRight 1s ease-out;
 }
 
@@ -73,6 +73,19 @@ body{
 
 .homeAboutTextSection{
     margin: 200px 0;
+}
+
+.homeAboutTextSectionParagraph{
+    line-height: 40px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width:600px){
+    .homeAboutTextSectionParagraph{
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 100;
+    }
 }
 
 .ourClientsSection{
