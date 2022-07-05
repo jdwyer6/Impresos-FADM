@@ -1,6 +1,8 @@
 :root {
     --blue: rgb(0, 159, 227);
-    --pink: rgb(230, 0, 126);
+    --blueTransparent: rgb(0, 159, 227, .8);
+    --lightBlueTransparent: rgba(198, 238, 255, 0.8);
+    --pink: rgb(230, 0, 127);
     --yellow: rgb(255, 221, 0);
     --darkGray: rgb(29, 29, 27);
     --lightGray: rgb(120,120,131);
@@ -101,6 +103,8 @@ body{
 /* about us */
 .aboutUsContainer{
     margin-top: 100px;
+    /* height: 50rem; */
+    /* background-image: linear-gradient(to right bottom, var(--blueTransparent), var(--lightBlueTransparent)), url(/images/home.jpg); */
 }
 
 .myButton{
