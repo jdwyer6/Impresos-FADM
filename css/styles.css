@@ -1,7 +1,7 @@
 :root {
     --blue: rgb(0, 159, 227);
-    --blueTransparent: rgba(0, 159, 227, 0.459);
-    --lightBlueTransparent: rgba(198, 238, 255, 0);
+    --blueTransparent: rgba(0, 159, 227, 0.5);
+    --lightBlueTransparent: rgba(0, 159, 227, 0.5);
     --pink: rgb(230, 0, 127);
     --yellow: rgb(255, 221, 0);
     --darkGray: rgb(29, 29, 27);
@@ -60,6 +60,32 @@ body{
     border-radius: 50%;
 }
 
+.homeAboutWithImageBg{
+    margin-top: 20vh;
+    background-image: linear-gradient(to right bottom, var(--darkGray), var(--lightBlueTransparent)), url(/images/home/FÁBRICA_20.JPG);
+    background-size: cover;
+}
+
+.homeAboutText{
+    margin: 75px 0 100px 0;
+}
+
+
+.homeAboutTextSection{
+    margin: 200px 0;
+}
+
+.ourClientsSection{
+    height: 30rem;
+    /* margin: 200px 0; */
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.clientsRow{
+    padding: 150px 25px;
+    margin: auto;
+}
+
 @keyframes moveInLeft{
     0%{
         opacity: 0;
@@ -102,10 +128,14 @@ body{
 /* about us */
 .aboutUsHeroImageContainer{
     height: 100vh;
-    background-image: linear-gradient(to right bottom, var(--blueTransparent), var(--lightBlueTransparent)), url(/images/about/FÁBRICA_22.JPG);
+    background-image: linear-gradient(to right bottom, var(--blueTransparent), rgba(0,0,0,0)), url(/images/about/FÁBRICA_22.JPG);
     background-size: cover;
     /* background-image:; */
 } 
+
+.navToggleIcon{
+    z-index: 5;
+}
 
 .heroImageRow{
     height: 100vh;
@@ -116,7 +146,6 @@ body{
 }
 
 .myButton{
-    /* box-shadow: inset 0 0 0 0 white; */
     transition: .4s ease-in-out;
     padding: 10px;
     background-color: var(--darkGray);
@@ -126,7 +155,6 @@ body{
 }
 
 .myButton:hover{
-    /* box-shadow: inset -350px 0 0 0 white; */
     outline: none;
     color: black;
     background-color: var(--antiFlashWhite);
@@ -164,23 +192,20 @@ body{
 
 /* Services */
 .servicesImg{
-    object-fit: cover;
-    max-width: 600px;
-    /* max-height: 350px; */
+    /* object-fit: cover; */
 	transform: scale(1);
 	transition: .6s ease-in-out;
 }
 
 .servicesImg:hover{
-    object-fit: cover;
-    cursor: pointer;
+    /* object-fit: cover; */
 	transform: scale(1.1);
 }
 
 figure{
     overflow: hidden;
     max-width: 600px;
-    max-height: 350px;
+    max-height: 600px;
 }
 
 /* About Us */

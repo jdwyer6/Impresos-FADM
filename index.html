@@ -20,7 +20,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-transparent mt-0 mx-3">
-        <a class="navbar-brand" href="#"><img class="image-fluid" width="70px" height="auto" src="images/FADM_LOGO_COLOR_HOR.png"/></a>
+        <a class="navbar-brand" href="#"><img class="image-fluid" width="70px" height="auto" alt="logo" src="images/FADM_LOGO_COLOR_HOR.png"/></a>
         <button class="navbar-toggler">
             <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
         </button>
@@ -34,91 +34,85 @@
         </div>
     </nav>
 
-    <header>
-        <div class="container-fluid mt-5">
-            <div class="row mx-3">
-                <h1 class="text-left headerText">La mejor calidad, al mejor precio y en el menor tiempo posible</h1>
-                <p class="headerTag">La mejor opción para manufactura.</p>
-            </div>
-        </div>
-    </header>
-
-    <div class="container-fluid mt-5">
+    <header class="container-fluid my-5 mx-3">
         <div class="row mx-3">
-            <div class="col-lg col-md-6">
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/impresion.jpg"></a>
+            <h1 class="text-left headerText">La mejor calidad, al mejor precio y en el menor tiempo posible</h1>
+            <p class="headerTag">La mejor opción para manufactura.</p>
+        </div>
+        <div class="row my-5">
+            <div class="col-lg-3 col-md-6">
+                <a href="servicios.html"><img alt="serviceImage1" class="img-fluid serviceImage" src="images/impresion.jpg"></a>
                 <div class="border-top border-dark mt-3">
                     <p>Cajas - Flyers - Posters - Folletos...</p>
                     <h4>Impresión</h4>
                 </div>
             </div>
-            <div class="col-lg col-md-6">
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/home/Empaque.png"></a>
+            <div class="col-lg-3 col-md-6">
+                <a href="servicios.html"><img alt="serviceImage2" class="img-fluid serviceImage" src="images/home/Empaque.png"></a>
                 <div class="border-top border-dark mt-3">
                     <p>Cajas de PVC - Tarjeta Impresa</p>
                     <h4>Empaque</h4>
                 </div>
             </div>
-            <div class="col-lg col-md-6">
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/home/Termoformado.png"></a>
+            <div class="col-lg-3 col-md-6">
+                <a href="servicios.html"><img alt="serviceImage3" class="img-fluid serviceImage" src="images/home/Termoformado.png"></a>
                 <div class="border-top border-dark mt-3">
                     <p>Clamshell - Blister Pack - Charolas</p>
                     <h4>Termoformado</h4>
                 </div>
             </div>
-            <div class="col-lg col-md-6">
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/home/Barniz.png"></a>
+            <div class="col-lg-3 col-md-6">
+                <a href="servicios.html"><img alt="serviceImage4" class="img-fluid serviceImage" src="images/home/Barniz.png"></a>
                 <div class="border-top border-dark mt-3">
                     <p>Barniz U.V. - Termosellante - Suaje... </p>
                     <h4>Acabados</h4>
                 </div>
             </div>
         </div>
+    </header>
+
+    <!-- About Us -->
+    <div class="container-fluid homeAboutWithImageBg" data-aos="fade-up">
+        <div class="row d-flex justify-content-center" data-aos="fade-left">
+            <h1 class="h1 text-white homeAboutText">Acerca de</h1>
+        </div>
+        <div class="row d-flex justify-content-center" data-aos="fade-right">
+            <h4 class="text-white mx-5 headerText">Proponemos soluciones creativas que superen las expectativas de nuestros clientes.</h4>
+            <!-- <a href="about.html"><button type="button" class="btn btn-secondary btnCircleLg"><span>Acerca de nosotros</span></button></a> -->
+        </div>
+        <div class="row d-flex justify-content-center" data-aos="fade-left">
+            <a href="about.html"><button type="button" class="btn btn-secondary btnCircleLg homeAboutText"><span>Acerca de nosotros</span></button></a>
+        </div>
     </div>
 
-    <!-- About us (homepage snippet) -->
-    <div class="container-fluid aboutUsContainer my-2 my-sm-5">
-        <div class="row mx-3">
-            <div class="col">
-                <h1 class="display-sm-3">Acerca de</h1>
-            </div>
+    <div class="container-fluid homeAboutTextSection" data-aos="fade-up">
+        <div class="row mx-5 d-flex justify-content-center" data-aos="fade-up">
+            <p class="m-sm-5 p-sm-5 h5"><b><i>En FADM contamos con sistemas e instalaciones de última generación en producción y manejo de empaques. A su vez, disponemos de un parque de maquinaria y líneas de producción que nos permiten satisfacer cualquier requerimiento del cliente y las especificaciones y particularidades de sus productos, por lo que ofrecemos la realización de empaques tanto en cantidades pequeñas como en partidas de varios cientos de miles de unidades, según se requiera.</i></b></p>
         </div>
-        <div class="row mx-3">
-            <div class="col-lg-6 pr-lg-5">
-                <h4>Proponemos soluciones creativas que superen las expectativas de nuestros clientes.</h4>
-            </div>
-            <div class="col-lg-6 pl-lg-5">
-                <p>En FADM contamos con sistemas e instalaciones de última generación en producción y manejo de empaques. A su vez, disponemos de un parque de maquinaria y líneas de producción que nos permiten satisfacer cualquier requerimiento del cliente y las especificaciones y particularidades de sus productos, por lo que ofrecemos la realización de empaques tanto en cantidades pequeñas como en partidas de varios cientos de miles de unidades, según se requiera.</p>
-                <a href="about.html"><button type="button" class="btn btn-secondary btn-sm myButton"><span>Acerca de nosotros</span></button></a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid mt-5 d-flex justify-content-center factoryImageHomePage0Container">
-        <div class="row mx-3">
-                <img class="factoryImageHomePage0" width="100%" height="auto" src="images/home.jpg" data-aos="fade-up">
-        </div>
-        
     </div>
 
     <!-- Clients -->
-    <div class="container-fluid mt-5 mb-5">
-        <div class="row mx-3" data-aos="fade-right">
-            <h1 class="border-bottom border-secondary border-5">Nuestros Clientes</h1>
+    <div class="container-fluid ourClientsSection">
+        <div class="row d-flex flex-column clientsRow">
+            <div class="row mx-3" data-aos="fade-right">
+                <h1 class="border-bottom border-secondary border-5">Nuestros Clientes</h1>
+            </div>
+            <div class="row mx-3 align-items-center text-align-center">
+                <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
+                    <img width="300" alt="clientLogo" class="img-fluid" src="images/edgewellLogo.png">
+                </div>
+                <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
+                    <img width="250" alt="clientLogo" class="img-fluid" src="images/MobiLogo.png">
+                </div>
+                <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
+                    <img width="250" alt="clientLogo" class="img-fluid" src="images/republicCosmeticsLogo.png">
+                </div>
+                <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
+                    <img width="250" alt="clientLogo" class="img-fluid" src="images/sheratonLogo.png">
+                </div>
+            </div>
         </div>
-        <div class="row mx-3 align-items-center text-align-center">
-            <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
-                <img width="300" class="img-fluid" src="images/edgewellLogo.png">
-            </div>
-            <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
-                <img width="250" class="img-fluid" src="images/MobiLogo.png">
-            </div>
-            <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
-                <img width="250" class="img-fluid" src="images/republicCosmeticsLogo.png">
-            </div>
-            <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
-                <img width="250" class="img-fluid" src="images/sheratonLogo.png">
-            </div>
-        </div>
+
     </div>
 
     <footer>
