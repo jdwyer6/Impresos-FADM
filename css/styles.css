@@ -1,7 +1,7 @@
 :root {
     --blue: rgb(0, 159, 227);
-    --blueTransparent: rgb(0, 159, 227, .8);
-    --lightBlueTransparent: rgba(198, 238, 255, 0.8);
+    --blueTransparent: rgba(0, 159, 227, 0.459);
+    --lightBlueTransparent: rgba(198, 238, 255, 0);
     --pink: rgb(230, 0, 127);
     --yellow: rgb(255, 221, 0);
     --darkGray: rgb(29, 29, 27);
@@ -28,7 +28,6 @@ body{
 
 .headerText{
     font-size: 6vw;
-
     animation: moveInRight 1s ease-out;
 }
 
@@ -101,10 +100,19 @@ body{
 }
 
 /* about us */
-.aboutUsContainer{
-    margin-top: 100px;
-    /* height: 50rem; */
-    /* background-image: linear-gradient(to right bottom, var(--blueTransparent), var(--lightBlueTransparent)), url(/images/home.jpg); */
+.aboutUsHeroImageContainer{
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, var(--blueTransparent), var(--lightBlueTransparent)), url(/images/about/FÁBRICA_22.JPG);
+    background-size: cover;
+    /* background-image:; */
+} 
+
+.heroImageRow{
+    height: 100vh;
+}
+
+.whiteText:hover{
+    color: var(--yellow);
 }
 
 .myButton{
