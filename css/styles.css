@@ -62,7 +62,7 @@ body{
 
 .homeAboutWithImageBg{
     margin-top: 20vh;
-    background-image: linear-gradient(to right bottom, var(--darkGray), var(--lightBlueTransparent)), url(/images/home/FÁBRICA_20.JPG);
+    background-image: linear-gradient(to right bottom, var(--darkGray), var(--lightBlueTransparent)), url(/images/Home/FÁBRICA_20.JPG);
     background-size: cover;
 }
 
