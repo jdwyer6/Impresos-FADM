@@ -28,7 +28,7 @@ body{
 
 .headerText{
     font-size: 4vw;
-    animation: moveInRight 1s ease-out;
+    /* animation: moveInRight 1s ease-out; */
 }
 
 .headerTag{
