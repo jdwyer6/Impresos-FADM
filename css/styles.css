@@ -1,4 +1,10 @@
+/* Modern Variables */
 :root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --transition: all 0.3s ease;
     --blue: rgb(0, 159, 227);
     --blueTransparent: rgba(0, 159, 227, 0.5);
     --lightBlueTransparent: rgba(0, 159, 227, 0.5);
@@ -9,6 +15,122 @@
     --antiFlashWhite: #F0F0F0;
 }
 
+/* Global Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-bg);
+    background-color: var(--antiFlashWhite);
+}
+
+/* Navigation */
+.navbar {
+    transition: var(--transition);
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    transition: var(--transition);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Service Cards */
+.hover-card {
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* About Section */
+.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #0a58ca) !important;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+}
+
+/* Animations */
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Custom Button Styles */
+.btn {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-light {
+    background-color: white;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+/* Typography */
+.display-4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.lead {
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+/* Utility Classes */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
 @font-face{
     font-family: metropolisRegular;
     src: url(../fonts/metropolis.regular.otf);
@@ -17,11 +139,6 @@
 @font-face{
     font-family: dinProLight;
     src: url(../fonts/dinpro.ttf);
-}
-
-body{
-    font-family: metropolisRegular;
-    background-color: var(--antiFlashWhite);
 }
 
 /* Home Page */

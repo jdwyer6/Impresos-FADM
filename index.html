@@ -1,154 +1,672 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/appTouch.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Slicknav CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/slicknav.min.css">
+
+    <!-- Template Main Styles -->
+    <link rel="stylesheet" href="css/template.css" />
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Impresos FADM</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-transparent mt-0 ">
-        <a class="navbar-brand" href="#"><img class="image-fluid" width="70px" height="auto" alt="logo" src="images/FADM_LOGO_COLOR_HOR.png"/></a>
-        <button class="navbar-toggler">
-            <span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbarMenu"></span>
-        </button>
-        <div class="bg-transparent collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item navButton"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item navButton"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                <li class="nav-item navButton"><a class="nav-link" href="about.html">Acerca de</a></li>
-                <li class="nav-item navButton"><a class="nav-link" href="contact.html">Contáctanos</a></li>
-                    <!-- Language Selection -->
-                <li class="language-selection-container d-flex">
-                    <div class="bg-info p-2">
-                        <a href="index-en.html" class="language-selection text-white">ENGLISH</a>
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader" style="display: none;">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop" style="display: none;"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <!-- Logo -->
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/FADM_LOGO_COLOR_HOR.png" alt="Impresos FADM" class="logo-img">
+                        </a>
+
+                        <!-- Mobile Toggle Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <!-- Navigation Menu -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Acerca de</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contacto</a>
+                                </li>
+                            </ul>
+
+                            <!-- Search and Language Bar -->
+                            <div class="navbar-extra ml-lg-3">
+                                <ul class="navbar-extra-list">
+                                    <li class="search-toggle">
+                                        <a href="#" class="search-icon">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </li>
+                                    <li class="language-selector">
+                                        <select class="language-select" onchange="changeLanguage(this.value)">
+                                            <option value="es" selected>ESP</option>
+                                            <option value="en">ENG</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+                </nav>
 
-    <header class="container-fluid my-5 mx-sm-3 ">
-        <div class="row p-3">
-            <h1 class="text-left headerText">La mejor calidad, al mejor precio y en el menor tiempo posible.</h1>
-            <p class="headerTag mt-3 mt-sm-1">La mejor opción para manufactura.</p>
+                <!-- Search Form (Hidden by default, shown when search icon clicked) -->
+                <div class="search-form-container" style="display: none;">
+                    <div class="container">
+                        <form class="search-form" action="#" method="get">
+                            <input type="search" name="search" placeholder="Buscar..." class="search-input">
+                            <button type="submit" class="search-submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <button type="button" class="search-close">
+                                <i class="fa fa-times"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--END MAINMENU AREA END-->
         </div>
-        <div class="row my-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="d-sm-none">Impresión</h4>
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/Home/impresion.jpg" alt="serviceImage1"></a>
-                <div class="border-top border-dark mt-3">
-                    <p>Cajas - Flyers - Posters - Folletos...</p>
-                    <h4 class="d-none d-sm-block">Impresión</h4>
+        <!--HOME SLIDER AREA-->
+        <div class="welcome-slider-area owl-carousel owl-theme">
+            <div class="welcome-single-slide slider-bg-one">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>LA MEJOR CALIDAD, AL MEJOR PRECIO Y EN EL MENOR TIEMPO POSIBLE</h1>
+                                <p>La mejor opción para manufactura.</p>
+                                <div class="home-button">
+                                    <a href="servicios.html">Nuestros Servicios</a>
+                                    <a href="contact.html">Solicitar Cotización</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                <h4 class="d-sm-none">Empaque</h4>
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/Home/Empaque.png" alt="serviceImage2"></a>
-                <div class="border-top border-dark mt-3">
-                    <p>Cajas de PVC - Tarjeta Impresa</p>
-                    <h4 class="d-none d-sm-block">Empaque</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                <h4 class="d-sm-none">Termoformado</h4>
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/Home/Termoformado.png" alt="serviceImage3"></a>
-                <div class="border-top border-dark mt-3">
-                    <p>Clamshell - Blister Pack - Charolas</p>
-                    <h4 class="d-none d-sm-block">Termoformado</h4>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-                <h4 class="d-sm-none">Acabados</h4>
-                <a href="servicios.html"><img class="img-fluid serviceImage" src="images/Home/Barniz.png" alt="serviceImage4"></a>
-                <div class="border-top border-dark mt-3">
-                    <p>Barniz U.V. - Termosellante - Suaje... </p>
-                    <h4 class="d-none d-sm-block">Acabados</h4>
+            <div class="welcome-single-slide slider-bg-two">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>SOLUCIONES CREATIVAS QUE SUPERAN LAS EXPECTATIVAS</h1>
+                                <p>Sistemas e instalaciones de última generación en producción y manejo de empaques.</p>
+                                <div class="home-button">
+                                    <a href="about.html">Acerca de Nosotros</a>
+                                    <a href="contact.html">Contáctanos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--END HOME SLIDER AREA-->
     </header>
+    <!--END TOP AREA-->
 
-    <!-- About Us -->
-    <div class="container-fluid homeAboutWithImageBg p-0 ">
-        <div class="row d-flex justify-content-center">
-            <h1 class="h1 text-white homeAboutText">Acerca de</h1>
+    <!--BLOG AREA-->
+    <section class="blog-area gray-bg padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <div class="blog-image">
+                            <img src="images/Home/impresion.jpg" alt="">
         </div>
-        <div class="row d-flex justify-content-center">
-            <h4 class="text-white text-center text-sm-left ">Proponemos soluciones creativas que superen las expectativas de nuestros clientes.</h4>
-            <!-- <a href="about.html"><button type="button" class="btn btn-secondary btnCircleLg"><span>Acerca de nosotros</span></button></a> -->
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="servicios.html"><i class="fa fa-print"></i></a></div>
+                            <h3><a href="servicios.html">Impresión</a></h3>
+                    <p>Cajas - Flyers - Posters - Folletos...</p>
+                            <a href="servicios.html" class="read-more">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="blog-image">
+                            <img src="images/Home/Empaque.png" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="servicios.html"><i class="fa fa-archive"></i></a></div>
+                            <h3><a href="servicios.html">Empaque</a></h3>
+                            <p>Cajas de PVC - Tarjeta Impresa</p>
+                            <a href="servicios.html" class="read-more">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <div class="blog-image">
+                            <img src="images/Home/Termoformado.png" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="servicios.html"><i class="fa fa-truck"></i></a></div>
+                            <h3><a href="servicios.html">Termoformado</a></h3>
+                            <p>Clamshell - Blister Pack - Charolas</p>
+                            <a href="servicios.html" class="read-more">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <a href="about.html"><button type="button" class="btn btn-secondary btnCircleLg homeAboutText"><span>Acerca de nosotros</span></button></a>
+    </section>
+    <!--BLOG AREA END-->
+
+    <!--ABOUT AREA-->
+    <section class="about-area gray-bg section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="quote-form-area wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <h3>Solicitar Cotización</h3>
+                        <form class="quote-form" action="https://formsubmit.co/ventas@fadm.com.mx" method="POST">
+                            <p class="width-full">
+                                <input type="text" name="name" id="name" placeholder="Nombre">
+                            </p>
+                            <p class="width-half">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input class="pull-right" type="phone" name="phone" id="phone" placeholder="Teléfono">
+                            </p>
+                            <p class="width-half">
+                                <input type="text" name="type" id="type" placeholder="Tipo">
+                                <input class="pull-right" type="text" name="quantity" id="quantity" placeholder="Cantidad">
+                            </p>
+                            <p class="width-full">
+                                <input type="text" name="destination" id="destination" placeholder="Destino">
+                            </p>
+                            <p>
+                                <textarea name="quote-message" id="quote-message" cols="30" rows="4" placeholder="Mensaje..."></textarea>
+                            </p>
+                            <input type="hidden" name="_next" value="https://fadm.com.mx/thankyou.html">
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+                    <div class="about-content-area wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="about-content">
+                            <h2>Proponemos soluciones creativas que superen las expectativas de nuestros clientes</h2>
+                            <p>En FADM contamos con sistemas e instalaciones de última generación en producción y manejo de empaques. A su vez, disponemos de un parque de maquinaria y líneas de producción que nos permiten satisfacer cualquier requerimiento del cliente y las especificaciones y particularidades de sus productos, por lo que ofrecemos la realización de empaques tanto en cantidades pequeñas como en partidas de varios cientos de miles de unidades, según se requiera.</p>
+                            <a href="about.html">Leer más <i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="about-count">
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-suitcase"></i> 120</h4>
+                                <p>Proyectos Completados</p>
+                            </div>
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-thumbs-o-up"></i> 100</h4>
+                                <p>Clientes Satisfechos</p>
+                            </div>
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-users"></i> 25</h4>
+                                <p>Años de Experiencia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+
+    <!--SERVICE AREA-->
+    <section class="service-area">
+        <div class="service-top-area padding-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                        <div class="area-title text-center wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h2>Nuestros Servicios</h2>
+                            <p>Ofrecemos soluciones integrales en impresión y empaques para diversos sectores industriales.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                        <div class="service-content wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <h2>Ofrecemos soluciones rápidas y poderosas en impresión y empaque</h2>
+                            <p>Satisfacemos las necesidades tanto normales como urgentes de nuestros clientes con la máxima eficiencia y calidad.</p>
+                            <a href="servicios.html" class="read-more">Leer Más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                        <div class="service-catalouge-content-area wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="service-catalouge-bg"></div>
+                            <div class="row">
+                                <div class="col-md-7 col-lg-7 col-md-offset-5 col-lg-offset-5 col-sm-12 col-xs-12">
+                                    <div class="catalouge-content">
+                                        <h3>¿Por qué elegirnos?</h3>
+                                        <p>Contamos con tecnología de vanguardia y un equipo altamente capacitado para garantizar productos de la más alta calidad.</p>
+                                        <ul>
+                                            <li><i class="fa fa-check"></i> Calidad certificada y garantizada</li>
+                                            <li><i class="fa fa-check"></i> Entregas puntuales y confiables</li>
+                                            <li><i class="fa fa-check"></i> Precios competitivos</li>
+                                            <li><i class="fa fa-check"></i> Atención personalizada al cliente</li>
+                                        </ul>
+                                        <a href="servicios.html" class="read-more">Leer Más</a>
+                                    </div>
+                                </div>
+                            </</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-bottom-area section-padding">
+            <div class="service-bottom-area-bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-md-offset-6 col-lg-offset-6 col-sm-12 col-xs-12">
+                        <div class="service-list wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                            <div class="single-service">
+                                <div class="service-icon-hexagon">
+                                    <div class="hex">
+                                        <div class="service-icon">
+                                            <i class="fa fa-print"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Impresión Digital</h4>
+                                    <p>Tecnología avanzada para impresiones de alta calidad en diversos materiales.</p>
+                                    <a href="servicios.html">Leer más</a>
+                                </div>
+                            </div>
+                            <div class="single-service">
+                                <div class="service-icon-hexagon">
+                                    <div class="hex">
+                                        <div class="service-icon"><i class="fa fa-archive"></i></div>
+                                    </div>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Empaques Personalizados</h4>
+                                    <p>Soluciones de empaque diseñadas específicamente para sus productos.</p>
+                                    <a href="servicios.html">Leer más</a>
+                                </div>
+                            </div>
+                            <div class="single-service">
+                                <div class="service-icon-hexagon">
+                                    <div class="hex">
+                                        <div class="service-icon"><i class="fa fa-cubes"></i></div>
+                                    </div>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Termoformado</h4>
+                                    <p>Proceso especializado para crear empaques resistentes y funcionales.</p>
+                                    <a href="servicios.html">Leer más</a>
+                                </div>
+                            </div>
+                            <div class="single-service">
+                                <div class="service-icon-hexagon">
+                                    <div class="hex">
+                                        <div class="service-icon"><i class="fa fa-magic"></i></div>
+                                    </div>
+                                </div>
+                                <div class="service-details">
+                                    <h4>Acabados Especiales</h4>
+                                    <p>Barniz UV, termosellado, suaje y otros acabados de alta calidad.</p>
+                                    <a href="servicios.html">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICE AREA END-->
+
+    <!--PROMO AREA-->
+    <section class="promo-area">
+        <div class="promo-top-area section-padding wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                        <div class="single-promo">
+                            <div class="promo-icon"><i class="fa fa-map-marker"></i></div>
+                            <div class="promo-details">
+                                <h3>Nuestra Ubicación</h3>
+                                <p>Ciudad de México, México</p>
+                            </div>
+                        </div>
+                        <div class="single-promo">
+                            <div class="promo-icon"><i class="fa fa-newspaper-o"></i></div>
+                            <div class="promo-details">
+                                <h3>Últimas Noticias</h3>
+                                <p>Información actualizada del sector</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                        <div class="single-promo">
+                            <div class="promo-icon"><i class="fa fa-umbrella"></i></div>
+                            <div class="promo-details">
+                                <h3>Soporte 24/7</h3>
+                                <p>Asistencia técnica disponible</p>
+                            </div>
+                        </div>
+                        <div class="single-promo">
+                            <div class="promo-icon"><i class="fa fa-bicycle"></i></div>
+                            <div class="promo-details">
+                                <h3>Entregas Rápidas</h3>
+                                <p>Servicio express disponible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-bottom-area section-padding">
+            <div class="promo-botton-area-bg" data-stellar-background-ratio="0.6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                        <div class="promo-bottom-content wow fadeIn" style="visibility: hidden; animation-name: none;">
+                            <h2>Proporcionamos servicios integrales de impresión y empaques en México</h2>
+                            <a href="contact.html" class="read-more">Solicitar Cotización</a>
+                        </div>
+        </div>
         </div>
     </div>
+        </div>
+    </section>
+    <!--PROMO AREA END-->
 
-    <div class="container-fluid homeAboutTextSection ">
-        <div class="row mx-5 d-flex justify-content-center">
-            <p class="m-sm-5 p-sm-5 h5 homeAboutTextSectionParagraph"><b><i>En FADM contamos con sistemas e instalaciones de última generación en producción y manejo de empaques. A su vez, disponemos de un parque de maquinaria y líneas de producción que nos permiten satisfacer cualquier requerimiento del cliente y las especificaciones y particularidades de sus productos, por lo que ofrecemos la realización de empaques tanto en cantidades pequeñas como en partidas de varios cientos de miles de unidades, según se requiera.</i></b></p>
+    <!--FOOTER AREA-->
+    <div class="footer-area dark-bg">
+        <div class="footer-area-bg"></div>
+        <div class="footer-top-area wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscribe-content">
+                            <h2>Boletín Informativo</h2>
+                            <p>Mantente al día con nuestras últimas novedades y ofertas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscriber-form-area">
+                            <form action="#" class="subsriber-form">
+                                <label for="subscriber-mail"><i class="fa fa-envelope-o"></i></label>
+                                <input type="email" name="subscriber-mail" id="subscriber-mail" placeholder="Ingresa tu correo">
+                                <button type="submit">Suscribirse</button>
+                            </form>
+                        </div>
+            </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area wow fadeIn" style="visibility: hidden; animation-name: none;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget footer-about">
+                            <h3>Acerca de Nosotros</h3>
+                            <p>Empresa líder en impresión y empaques con más de 25 años de experiencia.</p>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> <a href="tel:+525550954600">(55) 50954600</a></li>
+                                <li><i class="fa fa-map-marker"></i> <a href="mailto:ventas@fadm.com.mx">ventas@fadm.com.mx</a></li>
+                                <li><i class="fa fa-phone"></i> Ciudad de México, México</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget twitter-widget">
+                            <h3>Últimas Actualizaciones</h3>
+                            <ul>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-clock-o"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Servicio de impresión de alta calidad disponible 24/7.</p>
+                                        <a href="#" class="tweet-meta">Servicio continuo</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-truck"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Entregas rápidas en toda la República Mexicana.</p>
+                                        <a href="#" class="tweet-meta">Logística eficiente</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget list-widget">
+                            <h3>Servicio al Cliente</h3>
+                            <ul>
+                                <li><a href="contact.html">Soporte Técnico</a></li>
+                                <li><a href="contact.html">Cotizaciones</a></li>
+                                <li><a href="servicios.html">Catálogo de Servicios</a></li>
+                                <li><a href="about.html">Preguntas Frecuentes</a></li>
+                                <li><a href="contact.html">Contáctanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget instafeed-widget">
+                            <h3>Certificaciones</h3>
+                            <ul>
+                                <li><a href="#"><img src="images/Certificado1.png" alt="Certificación 1"></a></li>
+                                <li><a href="#"><img src="images/Certificado2.png" alt="Certificación 2"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-copyright wow fadeIn" style="visibility: hidden; animation-name: none;">
+                            <p>Copyright © 2025 Impresos y Empaques FADM. Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-social-bookmark text-right wow fadeIn" style="visibility: hidden; animation-name: none;">
+                            <ul class="social-bookmark">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--FOOTER AREA END-->
 
-    <!-- Clients -->
-    <!-- <div class="container-fluid ourClientsSection ">
-        <div class="row d-flex flex-column clientsRow">
-            <div class="row mx-3" data-aos="fade-right">
-                <h1 class="border-bottom border-secondary border-5">Nuestros Clientes</h1>
-            </div>
-            <div class="row mx-3 align-items-center text-align-center">
-                <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
-                    <img width="300" alt="clientLogo" class="img-fluid" src="images/edgewellLogo.png">
-                </div>
-                <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
-                    <img width="250" alt="clientLogo" class="img-fluid" src="images/MobiLogo.png">
-                </div>
-                <div class="col-6 col-sm-3 mt-3" data-aos="fade-up">
-                    <img width="250" alt="clientLogo" class="img-fluid" src="images/republicCosmeticsLogo.png">
-                </div>
-                <div class="col-6 col-sm-3 mt-3" data-aos="fade-down">
-                    <img width="250" alt="clientLogo" class="img-fluid" src="images/sheratonLogo.png">
-                </div>
-            </div>
-        </div>
 
-    </div> -->
-
-    <footer>
-        <div class="container-fluid ">
-            <div class="row mx-3 border-top border-dark mt-5">
-                <div class="col mt-5">
-                    <h3>Impresos y Empaques FADM</h3>
-                    <p>Maíz 350 Col. Del Valle Sur<br> 
-                        Alcaldía Iztapalapa<br>
-                    Ciudad de México C.P. 09819</p>
-                </div>
-                <div class="col mt-5">
-                    <p>(55) 50954600</p>
-                    <p>ventas@fadm.com.mx</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 2000
-    });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!--====== SCRIPTS JS ======-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.stellar/0.6.2/jquery.stellar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!--===== CUSTOM JS=====-->
     <script src="script.js"></script>
+
+    <!--===== TEMPLATE JS=====-->
+    <script>
+        $(document).ready(function() {
+            // Initialize WOW.js
+            if (typeof WOW !== 'undefined') {
+                new WOW().init();
+            }
+
+            // Initialize Stellar.js for parallax
+            if (typeof $.fn.stellar !== 'undefined') {
+                $.stellar({
+                    horizontalScrolling: false,
+                    responsive: true
+                });
+            }
+
+            // Initialize Owl Carousel
+            if (typeof $.fn.owlCarousel !== 'undefined') {
+                $('.welcome-slider-area').owlCarousel({
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    autoplayHoverPause: true,
+                    nav: true,
+                    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                    dots: true,
+                    animateOut: 'fadeOut',
+                    animateIn: 'fadeIn'
+                });
+            }
+
+            // Search Toggle Functionality
+            $('.search-toggle .search-icon').click(function(e) {
+                e.preventDefault();
+                $('.search-form-container').slideToggle(300);
+                $('.search-input').focus();
+            });
+
+            $('.search-close').click(function() {
+                $('.search-form-container').slideUp(300);
+            });
+
+            // Close search when clicking outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('.search-toggle, .search-form-container').length) {
+                    $('.search-form-container').slideUp(300);
+                }
+            });
+
+            // Language Selector Functionality
+            window.changeLanguage = function(lang) {
+                if (lang === 'en') {
+                    window.location.href = 'index-en.html';
+                } else if (lang === 'es') {
+                    window.location.href = 'index.html';
+                }
+            };
+
+            // Sticky Navigation
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.mainmenu-area').addClass('sticky');
+                } else {
+                    $('.mainmenu-area').removeClass('sticky');
+                }
+            });
+
+            // Smooth Scrolling for Anchor Links
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 70
+                    }, 1000);
+                }
+            });
+
+            // Scroll to Top
+            $('.scrolltotop').click(function(){
+                $('html, body').animate({scrollTop : 0}, 800);
+                return false;
+            });
+
+            // Show/Hide Scroll to Top
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 300) {
+                    $('.scrolltotop').fadeIn();
+                } else {
+                    $('.scrolltotop').fadeOut();
+                }
+            });
+
+            // Navbar Collapse on Mobile
+            $('.navbar-nav .nav-link').click(function() {
+                if ($(window).width() < 992) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+
+            // Prevent dropdown from closing when clicking inside
+            $('.navbar-collapse').on('click', function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
 </body>
 </html>
